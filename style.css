@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Gotham Rounded Book';
+  src: url('fonts/GothamRounded-Book.eot');
+  src: url('fonts/GothamRounded-Book.eot?#iefix') format('embedded-opentype'), url('fonts/GothamRounded-Book.woff') format('woff'), url('fonts/GothamRounded-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Rounded Medium';
+  src: url('fonts/GothamRounded-Medium.eot');
+  src: url('fonts/GothamRounded-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/GothamRounded-Medium.woff') format('woff'), url('fonts/GothamRounded-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  font: 20px 'Gotham Rounded Book', sans-serif;
+  color: #FFFFB0;
+  line-height: 150%;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  flex: 1;
+  text-align: center;
+}
+
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-shadow: 0px 0px 5px lightblue;
+}
+
+h1, h2, h3, h4 {
+  color: #FAA3E9;
+}
+
+video#header-bg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
+}
+
+#logo {
+  display: block;
+  margin: auto;
+  width: 100%;
+
+  /* -webkit-filter: drop-shadow(0px 0px 10px rgba(0,200,219,.9)); */
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(255,172,255,.4));
+}
+
+.page {
+  max-width: 800px;
+  margin: auto;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  border-bottom: 1px solid rgba(255,255,255,.4);
+}
+
+#header {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#inner-header p {
+  padding-bottom: 0;
+  margin-bottom: 0px;
+}
+
+#main {
+  /* background: linear-gradient(135deg, rgba(155, 29, 21, .6) 0%, rgba(22, 31, 53, .6) 50%); */
+  background: radial-gradient(ellipse at center, rgba(155,29,21,.7) 0%,rgba(22,31,53,.7) 90%);
+  padding: 0px 30px;
+}
+
+#useless-content {
+  color: #000;
+}
