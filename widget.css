@@ -1,0 +1,56 @@
+#useless-widget {
+  font: 12px "Helvetica Neue", sans-serif;
+  width: 50px;
+  height: 40px;
+  overflow: hidden;
+  transition: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+}
+
+#useless-widget:hover {
+  transition: .3s all;
+  width: 310px;
+  height: 90px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, .9);
+}
+
+#useless-logo {
+  display: block;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+#useless-logo img {
+  height: 100%;
+}
+
+#useless-logo:hover {
+  background-color: transparent !important;
+}
+
+#useless-content {
+  margin-left: 65px;
+}
+
+#useless-widget p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+#useless-widget a {
+  text-transform: uppercase;
+  color: #000;
+}
+
+#useless-widget a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+

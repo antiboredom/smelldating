@@ -18,7 +18,7 @@ body {
   margin: 0;
   padding: 0;
   background: #000;
-  font: 20px 'Gotham Rounded Book', sans-serif;
+  font: 18px 'Gotham Rounded Book', sans-serif;
   color: #FFFFB0;
   line-height: 150%;
 }
@@ -32,7 +32,6 @@ nav a {
   text-align: center;
 }
 
-
 a {
   text-decoration: none;
   color: #fff;
@@ -44,6 +43,10 @@ a:hover {
 
 h1, h2, h3, h4 {
   color: #FAA3E9;
+}
+
+li {
+  margin: 15px 0;
 }
 
 video#header-bg {
@@ -59,7 +62,6 @@ video#header-bg {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url(polina.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -67,9 +69,8 @@ video#header-bg {
   display: block;
   margin: auto;
   width: 100%;
-
   /* -webkit-filter: drop-shadow(0px 0px 10px rgba(0,200,219,.9)); */
-  -webkit-filter: drop-shadow(0px 0px 10px rgba(255,172,255,.4));
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(255, 172, 255, .4));
 }
 
 .page {
@@ -77,7 +78,7 @@ video#header-bg {
   margin: auto;
   padding-bottom: 50px;
   padding-top: 50px;
-  border-bottom: 1px solid rgba(255,255,255,.4);
+  border-bottom: 1px solid rgba(255, 255, 255, .4);
 }
 
 #header {
@@ -95,10 +96,65 @@ video#header-bg {
 
 #main {
   /* background: linear-gradient(135deg, rgba(155, 29, 21, .6) 0%, rgba(22, 31, 53, .6) 50%); */
-  background: radial-gradient(ellipse at center, rgba(155,29,21,.7) 0%,rgba(22,31,53,.7) 90%);
+  background: radial-gradient(ellipse at center, rgba(155, 29, 21, .7) 0%, rgba(22, 31, 53, .7) 90%);
   padding: 0px 30px;
 }
 
 #useless-content {
   color: #000;
 }
+
+#reading-list p {
+  font-size: 15px;
+  line-height: 120%;
+}
+
+form {
+  /* background-color: rgba(0, 0, 0, .6); */
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.field {
+  margin: 10px 0;
+}
+
+.field label {
+  width: 200px;
+  text-align: right;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+input, select {
+  display: inline-block;
+  border: 2px solid pink;
+  background-color: 3F1416;
+  color: #fff;
+  padding: 5px;
+  width: 200px;
+  /* width: 200px; */
+  font-size: 16px;
+}
+
+#submit {
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media only screen and (max-device-width: 800px) {
+  video {
+    display: none;
+  }
+
+  .field label {
+    text-align: left;
+  }
+
+  .field input {
+    width: 100%;
+  }
+}
+
+
